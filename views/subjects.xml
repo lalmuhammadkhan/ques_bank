@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--tree view of the subjects model-->
+     <record id="subjects_tree" model="ir.ui.view">
+        <field name="name">qb.subjects.tree</field>
+        <field name="model">qb.subjects</field>
+        <field name="arch" type="xml">
+           <tree string="Subjects">
+                <field name="Subject_ID" />
+                <field name="Subject_Name" />
+                <field name="Session"/>
+                <field name="Grade_ID"/>
+           </tree>
+        </field>
+    </record>
+
+    <!--form view of the subjects model-->
+    <record id="subjects_form" model="ir.ui.view">
+        <field name="name">qb.subjects.form</field>
+        <field name="model">qb.subjects</field>
+        <field name="arch" type="xml">
+            <form string="Subjects">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="Subject_ID" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="Subject_Name" />
+                            <field name="Session"/>
+                        </group>
+                        <group>
+                            <field name="Grade_ID" />
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followrs"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" option="{'post_refresh':'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- action of the Subjects menu-->
+         <record id="action_subjects" model = "ir.actions.act_window">
+             <field name="name">Subjects</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="res_model">qb.subjects</field>
+             <field name="view_mode">tree,form</field>
+             <field name="context">{}</field>
+             <field name="help" type="html">
+                 <p class="o_view_nocontent_smiling_face">
+                     Define Subjects !
+                 </p>
+             </field>
+         </record>
+
+          <!--<menuitem id="qb_root" name="Question Bank" sequence="0" web_icon="om_hospital,static/description/icon.png"/>-->
+          <!--<menuitem id="qb_Initials" name="Initials" parent="qb_root" sequence="100" />-->
+          <menuitem id="qb_subjects" name="Subjects" parent="qb_Initials" sequence="20" action="action_subjects"/>
+
+</odoo>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+      <record id="res_group_form_view_inherited" model="ir.ui.view">
+            <field name="name">res.group.form.view.inherited</field>
+            <field name="model">res.groups</field>
+            <field name="priority" eval="10"/>
+            <field name="inherit_id" ref="base.view_groups_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='share']" position="after">
+                    <field name="note" />
+                </xpath>
+                <xpath expr="//field[@name='note']" position="after">
+                    <field name="Subject_ID" widget="many2many_tags"/>
+                </xpath>
+                <field name="category_id" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </field>
+                <field name="share" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </field>
+                <xpath expr="//notebook/page[2]" position="attributes">
+                    <attribute name="invisible">True</attribute>
+			    </xpath>
+                <xpath expr="//notebook/page[3]" position="attributes">
+                    <attribute name="invisible">True</attribute>
+			    </xpath>
+                <xpath expr="//notebook/page[4]" position="attributes">
+                    <attribute name="invisible">True</attribute>
+			    </xpath>
+                <xpath expr="//notebook/page[5]" position="attributes">
+                    <attribute name="invisible">True</attribute>
+			    </xpath>
+                <xpath expr="//notebook/page[6]" position="attributes">
+                    <attribute name="invisible">True</attribute>
+			    </xpath>
+                <xpath expr="//notebook/page[7]" position="attributes">
+                    <attribute name="invisible">True</attribute>
+			    </xpath>
+            </field>
+        </record>
+
+    <record id="action_qb_groups" model="ir.actions.act_window">
+        <field name="name">Custom Groups</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.groups</field>
+        <field name="view_id" ref="res_group_form_view_inherited"/>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'ques_bank'}</field>
+    </record>
+
+   <menuitem id="menu_qb_configuration"
+              name="Configuration"
+              parent="qb_root"
+              sequence="130"/>
+
+    <menuitem id="menu_ab_settings"
+              name="Custom Groups"
+              parent="menu_qb_configuration"
+              sequence="20"
+              action="action_qb_groups"/>
+
+</odoo>

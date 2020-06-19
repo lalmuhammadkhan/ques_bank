@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_qb_grades,access.qb.grades,model_qb_grades,,1,1,1,1
+access_qb_subjects,access.qb.subjects,model_qb_subjects,,1,1,1,1
+access_qb_sections,access.qb.sections,model_qb_sections,,1,1,1,1
+access_qb_units,access.qb.units,model_qb_units,,1,1,1,1
+access_qb_topics,access.qb.topics,model_qb_topics,,1,1,1,1
+access_qb_cognitive,access.qb.cognitive,model_qb_cognitive,,1,1,1,1
+access_qb_itemtypes,access.qb.itemtypes,model_qb_itemtypes,,1,1,1,1
+access_qb_scheme,access.qb.scheme,model_qb_scheme,,1,1,1,1
+access_qb_options,access.qb.options,model_qb_options,,1,1,1,1
+access_qb_objective,access.qb.objective,model_qb_objective,,1,1,1,1
+access_qb_objective_responses,access.qb.objective.responses,model_qb_objective_responses,,1,1,1,1
+access_qb_subjective,access.qb.subjective,model_qb_subjective,,1,1,1,1

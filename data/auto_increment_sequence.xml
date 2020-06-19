@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="seq_qb_grades" model="ir.sequence">
+            <field name="name">Grades Sequence</field>
+            <field name="code">qb.grades.sequence</field>
+            <field name="prefix">G</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+     <data noupdate="1">
+        <record id="seq_qb_subjects" model="ir.sequence">
+            <field name="name">Subjects Sequence</field>
+            <field name="code">qb.subjects.sequence</field>
+            <field name="prefix">S</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+     <data noupdate="1">
+        <record id="seq_qb_Sections" model="ir.sequence">
+            <field name="name">Sections Sequence</field>
+            <field name="code">qb.Sections.sequence</field>
+            <field name="prefix">SEC</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+     <data noupdate="1">
+        <record id="seq_qb_Units" model="ir.sequence">
+            <field name="name">Units Sequence</field>
+            <field name="code">qb.units.sequence</field>
+            <field name="prefix">U</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+     <data noupdate="1">
+        <record id="seq_qb_topics" model="ir.sequence">
+            <field name="name">Topics Sequence</field>
+            <field name="code">qb.topics.sequence</field>
+            <field name="prefix">T</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+    <data noupdate="1">
+        <record id="seq_qb_topics" model="ir.sequence">
+            <field name="name">Topics Sequence</field>
+            <field name="code">qb.topics.sequence</field>
+            <field name="prefix">T</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+     <data noupdate="1">
+        <record id="seq_qb_cognitive" model="ir.sequence">
+            <field name="name">Cognitive Sequence</field>
+            <field name="code">qb.cognitive.sequence</field>
+            <field name="prefix">COG</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+     <data noupdate="1">
+        <record id="seq_qb_itemtypes" model="ir.sequence">
+            <field name="name">Item Types Sequence</field>
+            <field name="code">qb.itemtypes.sequence</field>
+            <field name="prefix">TYP</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+     <data noupdate="1">
+        <record id="seq_qb_scheme" model="ir.sequence">
+            <field name="name">Scheme Sequence</field>
+            <field name="code">qb.scheme.sequence</field>
+            <field name="prefix">SLO</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+      <data noupdate="1">
+        <record id="seq_qb_options" model="ir.sequence">
+            <field name="name">Options Sequence</field>
+            <field name="code">qb.options.sequence</field>
+            <field name="prefix">OPT</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+     <data noupdate="1">
+        <record id="seq_qb_objective" model="ir.sequence">
+            <field name="name">Objective Questions Sequence</field>
+            <field name="code">qb.objective.sequence</field>
+            <field name="prefix">O</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+     <data noupdate="1">
+        <record id="seq_qb_subjective" model="ir.sequence">
+            <field name="name">Subjective Questions Sequence</field>
+            <field name="code">qb.subjective.sequence</field>
+            <field name="prefix">S</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+
+
+
+</odoo>
